@@ -20,22 +20,39 @@
     </ul>
     <button id="btn">Calcular</button>
     <p id="result">O resultado é: 0</p>
+    <div id="result"></div>
     <script>
-        var altura = document.getElementById("alturac");
-        var comprimento = document.getElementById("comprimentoc");
-        var largura = document.getElementById("largurac");
+        var getElementAltura = document.getElementById("alturac");
+        var getElementComprimento = document.getElementById("comprimentoc");
+        var getElementLargura = document.getElementById("largurac");
 
-        var btnElement = document.getElementById("btn");
-        btnElement.onclick = retornavol(altura, comprimento, largura)
+        var altura = getElementAltura.value; 
+        var comprimento = getElementComprimento.value;
+        var largura = getElementLargura.value;
         
-        function retornavol(altura, comprimento, largura) {
-            var volume = altura * comprimento * largura;
+        Number.parseFloat(altura);
+        Number.parseFloat(comprimento);
+        Number.parseFloat(largura);
 
-            return volume;
-        } 
+        function retornavolume(altura, comprimento, altura) {
+            var result = altura * comprimento * altura;
+            
+            return result;
+        }
 
-  
-        console.log(retornavol(altura, comprimento, altura);
+        var getElementButton = document.getElementById("btn")
+        var calcular = getElementButton
+
+        var resultfinal = retornavolume(altura, comprimento, largura)
+        calcular.onclick = function (){
+            document.getElementById('result').innerHTML = resultfinal;
+        }
+        var linkElement = document.createElement('p');
+        var textElement = document.createTextNode(resultfinal)
+
+        var containerElement = document.getElementById("result");
+        containerElement.appendChild(textElement);
+        console.log(resultfinal)
         console.log(altura);
         console.log(comprimento);
         console.log(largura);
