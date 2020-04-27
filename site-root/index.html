@@ -18,5 +18,24 @@
     <li><label for="largura" id="largura">Largura (em cm):</label>
     <input type="number" id="largurac" name="largura"></li>
     </ul>
+    <button id="btn">Calcular</button>
+    <p id="result">O resultado é: 0</p>
+    <script>
+        var altura = document.getElementById("alturac");
+        var comprimento = document.getElementById("comprimentoc");
+        var largura = document.getElementById("largurac");
+
+        var btnElement = document.getElementById("btn")
+        btnElement.onclick = function(retornavolume) {
+            var volume = altura * comprimento * largura
+            return volume
+        }
+
+        var result = document.getElementById("result").innerHTML("O resultado é:", 
+
+        console.log(altura);
+        console.log(comprimento);
+        console.log(largura);
+    </script>
 </body>
 </html>
