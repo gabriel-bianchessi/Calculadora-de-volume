@@ -25,14 +25,17 @@
         var comprimento = document.getElementById("comprimentoc");
         var largura = document.getElementById("largurac");
 
-        var btnElement = document.getElementById("btn")
-        btnElement.onclick = function(retornavolume) {
-            var volume = altura * comprimento * largura
-            return volume
-        }
+        var btnElement = document.getElementById("btn");
+        btnElement.onclick = retornavol(altura, comprimento, largura)
+        
+        function retornavol(altura, comprimento, largura) {
+            var volume = altura * comprimento * largura;
 
-        var result = document.getElementById("result").innerHTML("O resultado é:", 
+            return volume;
+        } 
 
+  
+        console.log(retornavol(altura, comprimento, altura);
         console.log(altura);
         console.log(comprimento);
         console.log(largura);
