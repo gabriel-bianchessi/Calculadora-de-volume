@@ -64,3 +64,10 @@ button {
 #alt {
     margin-left: 112px;
 }
+
+#footer {
+    bottom: 0px;
+    text-align: center;
+    position: absolute;
+    font-size: 50%;
+}
