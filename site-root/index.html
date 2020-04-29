@@ -6,56 +6,6 @@
     <title>Calculadora de volume</title>
 </head>
 <body>
-    <ul>
-    <header>Calculadora de Volume</header>
-
-    <li><label for="altura" id="altura">Altura (em cm):</label>
-    <input type="number" id="alturac" name="altura"></li>
-
-    <li><label for="comprimento" id="comprimento">Comprimento (em cm):</label>
-    <input type="number" id="comprimentoc" name="comprimento"></li>
-
-    <li><label for="largura" id="largura">Largura (em cm):</label>
-    <input type="number" id="largurac" name="largura"></li>
-    </ul>
-    <button id="btn">Calcular</button>
-    <p id="result">O resultado é: 0</p>
-    <div id="result"></div>
-    <script>
-        var getElementAltura = document.getElementById("alturac");
-        var getElementComprimento = document.getElementById("comprimentoc");
-        var getElementLargura = document.getElementById("largurac");
-
-        var altura = getElementAltura.value; 
-        var comprimento = getElementComprimento.value;
-        var largura = getElementLargura.value;
-        
-        Number.parseFloat(altura);
-        Number.parseFloat(comprimento);
-        Number.parseFloat(largura);
-
-        function retornavolume(altura, comprimento, altura) {
-            var result = altura * comprimento * altura;
-            
-            return result;
-        }
-
-        var getElementButton = document.getElementById("btn")
-        var calcular = getElementButton
-
-        var resultfinal = retornavolume(altura, comprimento, largura)
-        calcular.onclick = function (){
-            document.getElementById('result').innerHTML = resultfinal;
-        }
-        var linkElement = document.createElement('p');
-        var textElement = document.createTextNode(resultfinal)
-
-        var containerElement = document.getElementById("result");
-        containerElement.appendChild(textElement);
-        console.log(resultfinal)
-        console.log(altura);
-        console.log(comprimento);
-        console.log(largura);
-    </script>
+    
 </body>
 </html>
