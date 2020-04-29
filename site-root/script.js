@@ -1,4 +1,3 @@
-var buttonElement = document.getElementById("btn");
 
 function calcvolume (){
     var inputComp = parseFloat(document.getElementById("comp").value);
