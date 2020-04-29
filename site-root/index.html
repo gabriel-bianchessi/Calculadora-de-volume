@@ -6,6 +6,23 @@
     <title>Calculadora de volume</title>
 </head>
 <body>
-    
+    <div id="app">
+        <h1>Calculadora de Volume</h1>
+       
+        <p>Digite os valores em cm e a Calculadora mostrará o volume</p>
+        <ul>
+            <li>Comprimento: <input type="number" placeholder="Comprimento" id="comp" ></li>
+            <li>Largura: <input type="number" placeholder="Largura" id="larg" ></li>
+            <li>Altura: <input type="number" placeholder="Altura" id="alt" ></li>
+        </ul>
+      
+        <button id="btn" onclick="renderVolume()">Calcular</button>
+      
+        <p id="result"></p>
+        
+        <p id="test"></p>
+
+        <script src="script.js"></script>
+    </div>
 </body>
 </html>
