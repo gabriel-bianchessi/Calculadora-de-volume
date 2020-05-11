@@ -4,7 +4,7 @@ function calcvolume (){
     var inputLarg = parseFloat(document.getElementById("larg").value);
     var inputAlt = parseFloat(document.getElementById("alt").value);
 
-    var volume = inputAlt * inputLarg * inputComp
+    var volume = inputAlt * inputLarg * inputComp 
     
     console.log(inputAlt);
     console.log(inputLarg);
